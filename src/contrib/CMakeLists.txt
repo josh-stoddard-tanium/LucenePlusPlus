@@ -4,6 +4,7 @@ file(GLOB_RECURSE contrib_sources
   analyzers/*.cpp
   highlighter/*.cpp
   memory/*.cpp
+  queries/*.cpp
   snowball/*.cpp
   snowball/libstemmer_c/libstemmer/libstemmer_utf8.c
   snowball/libstemmer_c/src_c/*.c

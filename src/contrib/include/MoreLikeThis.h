@@ -15,8 +15,11 @@
  * limitations under the License.
  */
 
-#include "LuceneHeaders.h"
+#include "Analyzer.h"
+#include "IndexReader.h"
 #include "PriorityQueue.h"
+#include "Query.h"
+#include "Similarity.h"
 
 /**
  * Generate "more like this" similarity queries.

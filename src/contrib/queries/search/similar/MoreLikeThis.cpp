@@ -15,10 +15,18 @@
  * limitations under the License.
  */
 
-#include "MoreLikeThis.h"
+#include "ContribInc.h"
+
+#include "BooleanQuery.h"
 #include "DefaultSimilarity.h"
+#include "Document.h"
+#include "MoreLikeThis.h"
+#include "StringReader.h"
+#include "Term.h"
 #include "TermAttribute.h"
 #include "TermFreqVector.h"
+#include "TermQuery.h"
+#include "TokenStream.h"
 
 namespace Lucene
 {

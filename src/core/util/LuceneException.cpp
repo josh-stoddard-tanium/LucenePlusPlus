@@ -95,7 +95,7 @@ void LuceneException::throwException() {
     }
 }
 
-const char* LuceneException::what() const _NOEXCEPT
+const char* LuceneException::what() const throw()
 {
     return _what.c_str();
 }

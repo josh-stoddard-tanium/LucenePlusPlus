@@ -60,7 +60,7 @@ public:
     bool isNull() const;
     void throwException();
 
-    virtual const char* what() const _NOEXCEPT;
+    virtual const char* what() const throw();
 };
 
 template <class ParentException, LuceneException::ExceptionType Type>

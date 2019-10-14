@@ -44,6 +44,7 @@ set_target_properties(lucene++-contrib PROPERTIES
   VERSION ${lucene++_VERSION}
   SOVERSION ${lucene++_SOVERSION}
   COMPILE_FLAGS -DLPP_HAVE_DLL
+  ${COTIRE_PROPERTIES}
 )
 
 target_link_libraries(lucene++-contrib

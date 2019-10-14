@@ -38,7 +38,9 @@ if(WIN32)
     target_link_libraries(lucene++ ws2_32)
 endif()
 
-set_target_properties(lucene++ PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "include/LuceneInc.h")
+set_target_properties(lucene++ PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "include/LuceneInc.h"
+  ${COTIRE_PROPERTIES}
+)
 cotire(lucene++)
 
 set_target_properties(lucene++ PROPERTIES

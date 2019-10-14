@@ -151,6 +151,13 @@ include_directories(
   "${CMAKE_CURRENT_BINARY_DIR}/include"
 )
 
+set(COTIRE_PROPERTIES)
+if(EMSCRIPTEN)
+    set(COTIRE_PROPERTIES
+        COTIRE_ENABLE_PRECOMPILED_HEADER FALSE
+        COTIRE_ADD_UNITY_BUILD FALSE
+    )
+endif(EMSCRIPTEN)
 
 add_subdirectory(src/core)
 add_subdirectory(src/contrib)

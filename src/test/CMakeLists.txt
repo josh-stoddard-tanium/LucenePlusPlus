@@ -43,6 +43,10 @@ add_dependencies(lucene++-tester
   gtest
 )
 
+set_target_properties(lucene++-tester PROPERTIES
+  ${COTIRE_PROPERTIES}
+)
+
 target_link_libraries(lucene++-tester
   ${CMAKE_THREAD_LIBS_INIT}
   lucene++

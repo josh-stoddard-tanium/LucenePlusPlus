@@ -92,7 +92,7 @@ public:
         if (array->size != other.array->size) {
             return false;
         }
-        return (std::memcmp(array->data, other.array->data, array->size) == 0);
+        return (std::memcmp(array->data, other.array->data, array->size * sizeof(TYPE)) == 0);
     }
 
     int32_t hashCode() const {

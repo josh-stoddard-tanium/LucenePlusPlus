@@ -134,7 +134,7 @@ bool TermAttribute::equals(const LuceneObjectPtr& other) {
             return false;
         }
 
-        return (std::memcmp(_termBuffer.get(), otherTermAttribute->_termBuffer.get(), _termLength) == 0);
+        return (std::memcmp(_termBuffer.get(), otherTermAttribute->_termBuffer.get(), _termLength * sizeof(wchar_t)) == 0);
     }
 
     return false;

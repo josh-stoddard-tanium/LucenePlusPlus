@@ -149,7 +149,7 @@ bool PorterStemmer::ends(const wchar_t* s) {
     if (length > k + 1) {
         return false;
     }
-    if (std::memcmp(b + k - length + 1, s + 1, length) != 0) {
+    if (std::memcmp(b + k - length + 1, s + 1, length * sizeof(wchar_t)) != 0) {
         return false;
     }
     j = k - length;
@@ -158,7 +158,7 @@ bool PorterStemmer::ends(const wchar_t* s) {
 
 void PorterStemmer::setto(const wchar_t* s) {
     int32_t length = s[0];
-    std::memmove(b + j + 1, s + 1, length);
+    std::memmove(b + j + 1, s + 1, length * sizeof(wchar_t));
     k = j + length;
     dirty = true;
 }

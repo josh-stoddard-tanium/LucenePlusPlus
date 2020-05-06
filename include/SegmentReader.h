@@ -22,7 +22,7 @@ public:
 protected:
     bool readOnly;
 
-INTERNAL:
+LUCENE_INTERNAL:
     BitVectorPtr deletedDocs;
     SegmentReaderRefPtr deletedDocsRef;
     CoreReadersPtr core;

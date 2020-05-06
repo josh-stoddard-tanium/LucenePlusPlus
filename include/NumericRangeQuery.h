@@ -112,7 +112,7 @@ public:
 
     LUCENE_CLASS(NumericRangeQuery);
 
-INTERNAL:
+LUCENE_INTERNAL:
     String field;
     int32_t precisionStep;
     int32_t valSize;

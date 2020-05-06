@@ -151,7 +151,7 @@ public:
 
     static const int32_t PER_DOC_BLOCK_SIZE;
 
-INTERNAL:
+LUCENE_INTERNAL:
     IndexWriterWeakPtr _writer;
     DirectoryPtr directory;
     IndexingChainPtr indexingChain;

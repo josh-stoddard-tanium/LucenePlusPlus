@@ -217,9 +217,9 @@ typedef boost::shared_ptr<TermInfoCache> TermInfoCachePtr;
 #include "Synchronize.h"
 #include "CycleCheck.h"
 #if defined(LPP_BUILDING_LIB) || defined(LPP_EXPOSE_INTERNAL)
-#define INTERNAL public
+#define LUCENE_INTERNAL public
 #else
-#define INTERNAL protected
+#define LUCENE_INTERNAL protected
 #endif
 
 #endif

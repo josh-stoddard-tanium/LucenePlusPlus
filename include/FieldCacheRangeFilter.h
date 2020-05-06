@@ -42,7 +42,7 @@ public:
 
     LUCENE_CLASS(FieldCacheRangeFilter);
 
-INTERNAL:
+LUCENE_INTERNAL:
     String field;
     ParserPtr parser;
     bool includeLower;

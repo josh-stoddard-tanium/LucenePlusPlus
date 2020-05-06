@@ -36,7 +36,7 @@ public:
 
     LUCENE_CLASS(RAMDirectory);
 
-INTERNAL:
+LUCENE_INTERNAL:
     int64_t _sizeInBytes;
     MapStringRAMFile fileMap;
 

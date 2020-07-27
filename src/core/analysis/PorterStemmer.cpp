@@ -409,7 +409,7 @@ void PorterStemmer::step4() {
         }
         return;
     case L'o':
-        if (ends(L"\03" L"ion") && (b[j] == L's' || b[j] == L't')) {
+        if (ends(L"\03" L"ion") && j >= 0 && (b[j] == L's' || b[j] == L't')) {
             break;
         }
         if (ends(L"\02" L"ou")) {
